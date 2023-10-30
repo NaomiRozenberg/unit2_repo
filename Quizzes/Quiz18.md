@@ -18,3 +18,4 @@ def get_truth():
 test = get_truth()
 print(test)
 ```
+<img width="161" alt="Screenshot 2023-10-30 at 13 08 58" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/bae2b4d8-b828-4e35-a7f2-90989157ebe6">
