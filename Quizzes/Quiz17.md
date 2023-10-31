@@ -17,3 +17,4 @@ print(result)
 ```
 <img width="161" alt="Screenshot 2023-10-30 at 15 57 58" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/afba8dfb-3504-4a48-a7a4-a171b85eb65a">
 ![Uploading IMG_AEDB90F32D4C-1.jpeg…]()
+Part 2 ![Uploading IMG_65A4F27158ED-1.jpeg…]()
