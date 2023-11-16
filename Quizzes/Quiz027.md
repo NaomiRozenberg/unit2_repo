@@ -1,3 +1,4 @@
+A. 
 ```py
 def count_letters(my_dict, msg):
     for x in range (len(msg)):
@@ -8,3 +9,6 @@ def count_letters(my_dict, msg):
 case1 = count_letters({'w': 0, 'l':0, 'c':0}, "hello world")
 print(case1)
 ```
+<img width="289" alt="Screenshot 2023-11-16 at 11 08 00" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ee954d4e-bb87-46e8-a0ac-e30214569410">
+
+B. 
