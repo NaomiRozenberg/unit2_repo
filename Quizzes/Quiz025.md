@@ -8,7 +8,6 @@ with open("data3.csv ",'r') as f:
     values = f.readlines()
 x = []
 t = 0
-print(values)
 for v in values:
     s1,s2,s3 =v.strip().split(',')
     data.append([int(s1),int(s2),int(s3)])
@@ -30,3 +29,4 @@ plt.ylabel("Temp")
 plt.show()
 ```
 <img width="506" alt="Screenshot 2023-11-17 at 21 27 12" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/2f462bef-b0d1-4203-bf08-0485dd662d1d">
+<img width="953" alt="Screenshot 2023-11-18 at 12 19 34" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/413ec7b0-5d4b-4415-a036-b8d72f6bde71">
