@@ -1,3 +1,4 @@
+Part A
 ```py def get_truth():
     out = 'A|B|C | AB+(not B)+not(CB)\n'
 
@@ -14,3 +15,8 @@ print(test)
 ```
 <img width="405" alt="Screenshot 2023-11-05 at 12 31 47" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/f0f79aff-495b-4b95-bb7f-c98cfc7a26b5">
 <img width="842" alt="Screenshot 2023-11-18 at 11 52 20" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/f1f174cb-70d4-42e0-aed1-5f7160838ccd">
+
+Part B 
+
+![IMG_0491](https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/5e5e6883-fb8b-4973-bc57-fdf3147e66e8)
+![IMG_0490](https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/99673ca0-d110-493e-accd-0b6bd6801baa)
