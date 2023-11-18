@@ -9,5 +9,4 @@ plt.title('quiz_data_science')
 plt.show()
 ```
 <img width="349" alt="Screenshot 2023-11-16 at 11 11 55" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/dad81f8f-554b-4af7-a11a-d1887833f1b1">
-
-B. 
+<img width="453" alt="Screenshot 2023-11-18 at 12 25 11" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/78300d44-0f09-457e-a8fc-c9c640ac9586">
