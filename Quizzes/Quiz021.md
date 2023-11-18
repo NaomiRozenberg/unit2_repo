@@ -17,3 +17,4 @@ plt.plot(a,b)
 plt.show()
 ```
 <img width="423" alt="Screenshot 2023-11-01 at 15 01 52" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/a485bf79-72dc-4a20-a3a1-fccd8977dda8">
+<img width="760" alt="Screenshot 2023-11-18 at 12 03 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/d83b86e0-7869-42ef-98e1-0892e57457c5">
