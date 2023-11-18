@@ -10,5 +10,6 @@ case1 = count_letters({'w': 0, 'l':0, 'c':0}, "hello world")
 print(case1)
 ```
 <img width="289" alt="Screenshot 2023-11-16 at 11 08 00" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ee954d4e-bb87-46e8-a0ac-e30214569410">
+<img width="673" alt="Screenshot 2023-11-18 at 12 30 34" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/eed49e12-fa12-41e1-8a3f-1bc162448eca">
 
 B. 
