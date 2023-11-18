@@ -13,3 +13,4 @@ test = get_truth()
 print(test)
 ```
 <img width="405" alt="Screenshot 2023-11-05 at 12 31 47" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/f0f79aff-495b-4b95-bb7f-c98cfc7a26b5">
+<img width="842" alt="Screenshot 2023-11-18 at 11 52 20" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/f1f174cb-70d4-42e0-aed1-5f7160838ccd">
