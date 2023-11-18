@@ -16,3 +16,4 @@ sample = produce(n=5,m=3,s=2)
 print(sample)
 ```
 <img width="306" alt="Screenshot 2023-10-31 at 10 08 11" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/d3590451-63c6-4600-94ea-39925ef7282b">
+<img width="670" alt="Screenshot 2023-11-18 at 11 58 22" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c813ca4f-e569-42d0-ab18-6f80515b3ebb">
