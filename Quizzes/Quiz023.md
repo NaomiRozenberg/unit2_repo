@@ -17,3 +17,4 @@ plt.show()
 <img width="445" alt="Screenshot 2023-11-22 at 13 08 08" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/b965ee16-f5b5-4b07-b614-b243640bfc6f">
 
 Part B 
+![IMG_F561226A68B6-1](https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/7877a765-9f89-4cf7-bc04-a1c96ad2bb90)
