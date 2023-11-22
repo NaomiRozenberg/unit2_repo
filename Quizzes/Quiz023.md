@@ -1,5 +1,5 @@
 Part A
-```py.
+```py
 import numpy as np
 import matplotlib.pyplot as plt
 def absolute_value_function(x):
