@@ -15,4 +15,5 @@ plt.scatter(time, h)
 plt.xlabel("Time (min)")
 plt.ylabel("Humidity%")
 plt.show()
-```<img width="506" alt="Screenshot 2023-11-17 at 21 28 59" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c48b8503-6f85-4017-93d3-27074d8a46fa">
+```
+<img width="506" alt="Screenshot 2023-11-17 at 21 28 59" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c48b8503-6f85-4017-93d3-27074d8a46fa">
