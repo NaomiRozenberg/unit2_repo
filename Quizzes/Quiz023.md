@@ -14,5 +14,6 @@ plt.grid(True)
 plt.show()
 ```
 <img width="360" alt="Screenshot 2023-11-22 at 12 53 04" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/1580dedc-4edc-40d2-9dda-73c3e87b647e">
+<img width="445" alt="Screenshot 2023-11-22 at 13 08 08" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/b965ee16-f5b5-4b07-b614-b243640bfc6f">
 
 Part B 
