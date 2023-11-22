@@ -17,3 +17,6 @@ plt.ylabel("Humidity%")
 plt.show()
 ```
 <img width="506" alt="Screenshot 2023-11-17 at 21 28 59" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c48b8503-6f85-4017-93d3-27074d8a46fa">
+<img width="418" alt="Screenshot 2023-11-22 at 13 11 35" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/caf02b01-977f-44e8-8804-1be4454a84f5">
+
+Part B 
