@@ -6,6 +6,8 @@
 
 ## Problem definition
 
+We are rescuing a squirrel. 
+
 ``` Fill out here```
 
 ## Proposed Solution
