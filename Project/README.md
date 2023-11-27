@@ -57,7 +57,7 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1      | Run our program in R1-11B | Measuring Humidity and temperature in R1-11B | 12H | Nov 26-27 |C| 
-| 2      | Run our program in R2-14A | Measuring Humidity and temperature in R2-14A | 12H | Nov 27-28 |C| 
+| 2      | Run our program in R2-14A | Measuring Humidity and temperature in R2-14A | 12H | Nov 26-27 |C| 
 
 
 ## Test Plan
