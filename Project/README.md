@@ -71,7 +71,59 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 ## List of techniques used
 
 ## Development
+DHT11 sensor data collection from arduino
 
+```py
+import csv
+import serial
+import time
+
+arduino = serial.Serial(port='/dev/cu.usbserial-10', baudrate=9600, timeout=.1)
+
+def read():
+    data = ""
+    while len(data) < 1:
+        data = arduino.readline()
+    return data
+
+Temperature = []
+Humidity = []
+Count = []
+
+count = 0
+
+while True:
+    time.sleep(300)
+    value = read()
+    msg = value.decode('utf-8')
+
+    if "Hello" not in msg:
+        humidity_temp = msg.split(" ")
+        h = humidity_temp[0]
+
+        v_h = h.split(":")
+        hum_value = float(v_h[1].strip("%"))
+
+        t = humidity_temp[1]
+        v_t = t.split(":")
+        temp_value = float(v_t[1].strip("C\r\n"))
+
+        Temperature.append(temp_value)
+        Humidity.append(hum_value)
+        count += 1
+        Count.append(count)
+        print(Temperature, Humidity, Count)
+
+        if count == 144:
+            csv_file_path = 'weather.csv'
+            with open(csv_file_path, mode='w', newline='') as file:
+                csv_writer = csv.writer(file)
+                csv_writer.writerow(['Temperature', 'Humidity', 'Count'])
+                csv_writer.writerows(zip(Temperature, Humidity, Count))
+
+            print(f'Data has been written to {csv_file_path}')
+            break
+```
 
 # Criteria D: Functionality
 
