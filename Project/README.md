@@ -61,6 +61,7 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 4|Make the code create and then append the data into two sepparate csv files|A file titled "weathear.csv" that store data in new lines|20min|Nov 25|C
 5| Run our program in R1-11B | Measuring Humidity and temperature in R1-11B | 12H | Nov 26-27 |C| 
 6| Run our program in R2-14A | Measuring Humidity and temperature in R2-14A | 12H | Nov 26-27 |C| 
+7|write the Design statement| Make the Design statement infotmetive| 10min| Nov 28| A 
 
 
 ## Test Plan
