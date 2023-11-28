@@ -113,7 +113,7 @@ while True:
         Count.append(count)
         print(Temperature, Humidity, Count)
 
-        if count == 144:
+        if count == 576:
             csv_file_path = 'weather.csv'
             with open(csv_file_path, mode='w', newline='') as file:
                 csv_writer = csv.writer(file)
