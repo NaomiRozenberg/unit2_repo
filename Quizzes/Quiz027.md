@@ -11,5 +11,6 @@ print(case1)
 ```
 <img width="289" alt="Screenshot 2023-11-16 at 11 08 00" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ee954d4e-bb87-46e8-a0ac-e30214569410">
 <img width="673" alt="Screenshot 2023-11-18 at 12 30 34" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/eed49e12-fa12-41e1-8a3f-1bc162448eca">
+<img width="1470" alt="Screenshot 2023-12-02 at 11 39 30" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/405b9712-8b3b-4a11-b350-bc20e5e09396">
 
 B. 
