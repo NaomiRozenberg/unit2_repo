@@ -6,7 +6,7 @@
 
 ## Problem definition ##
 
-John is a student at UWC ISAK Japan who is interested in growing plants. He recently found out that devil's ivy (epipremnum aureum) is a natural purifier, and he is in need of an inexpensive air purifier for the smelly room. 
+John is a student at UWC ISAK Japan who is interested in growing plants. He recently found out that devil's ivy (epipremnum aureum) is a natural purifier, and he is in need of an inexpensive air purifier for the smelly room. However, this plant is very sensitive to its surroundings: the leaves will turn yellow and it will eventually die if the moisture, temperature or sunligh level is appropriate for its growth. John doesn't know where to grow it. There are two options: the room or outside[the place where the api sensor is]. He is very indecisive as he doesn't know the difference in temperature or humidity of these two places. He has a thermometer, but it only gives him a glimpse of the temperature in the locations, while he can't see the comparison of the two places or the changing pattern in a few days, and the data is completely unknown to him while he sleeps. To make a decision, John needs a comprehensive set of data, including temperature, humidity, and other useful information such as standard deviation, mode, median, mean, etc. He desperately craves a tool that provides him with these information, with the comparison between the two places and graphs that visualize the humidity, temperature and the changing pattern. 
 
 
 ## Proposed Solution ##
@@ -16,7 +16,7 @@ Considering the budgetary constrains of the client and the hardware requirements
 
 **Design statement**
 
-We, Naomi and Dylan, will design and make a program that provides information of the temperature and huidity of two rooms, R1-11B and R2-14 represented in graphs along with other useful information such as standard deviation, mean, median, and mode. The information will be summarized and synthesized and a specific suggestion based on such information will be given in order to solve the problem defined above. DHT 11 sensor is used in this program in order to keep track of information on temperature and humidity. This progran is constructed with the software python, Arduino, and DHT 11 and will be evaluated by criteria A, B, and C. It takes around three weeks to be completed. 
+We, Naomi and Dylan, will design and make a program that provides information of the temperature and huidity of the specimen room, R1-11B represented in graphs along with other useful information such as standard deviation, mean, median, mode, minimum, and maximum. The information will be summarized and synthesized and a specific suggestion based on such information will be given in order to solve the problem defined above. DHT 11 sensor and raspberry pi 4 sensor are used in this program in order to keep track of information on temperature and humidity. The data is recorded every 5 minutes in 48 hours, and will be saved in a local file. After that, we will compare the two sets of data: indoor and outdoor, to give a suggestion on where John should grow devil's ivy based on the information illustrated by graphs. This progran is constructed with the software python, Arduino, and DHT 11 and will be evaluated by criteria A, B, and C. It takes around three weeks to be completed. 
 
 ## Success Criteria
 
