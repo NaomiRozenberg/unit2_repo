@@ -69,6 +69,14 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 ## List of techniques used
 
+1. Functions
+2. For loop
+3. While loop
+4. if statement
+5. Generating grpahs with matplotlib
+6. Connecting the raspberry sensor
+   
+
 ## Development
 DHT11 sensor data collection from arduino
 
