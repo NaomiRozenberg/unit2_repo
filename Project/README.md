@@ -26,7 +26,8 @@ We, Naomi and Dylan, will design and make a program that provides information of
 [^4]:Team, The Arduino. “What Is Arduino?: Arduino Documentation.” Arduino Documentation | Arduino Documentation, https://docs.arduino.cc/learn/starting-guide/whats-arduino.  
 [^5]:Tino. “Tino/PyFirmata: Python Interface for the Firmata (Http://Firmata.org/) Protocol. It Is Compliant with Firmata 2.1. Any Help with Updating to 2.2 Is Welcome. the Capability Query Is Implemented, but the Pin State Query Feature Not Yet.” GitHub, https://github.com/tino/pyFirmata. 
 [^6]:Python Geeks. “Advantages of Python: Disadvantages of Python.” Python Geeks, 26 June 2021, https://pythongeeks.org/advantages-disadvantages-of-python/. 
-[^7]: Real Python. “Python vs C++: Selecting the Right Tool for the Job.” Real Python, Real Python, 19 June 2021, https://realpython.com/python-vs-cpp/#memory-management. 
+[^7]: Real Python. “Python vs C++: Selecting the Right Tool for the Job.” Real Python, Real Python, 19 June 2021, https://realpython.com/python-vs-cpp/#memory-management.
+[^8]: Taken from stack overflow https://stackoverflow.com/questions/42504295/python-datetime-over-one-day
 
 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
 1. ```[HL]``` The local variables will be measure using a set of 3 sensors around the dormitory.
@@ -124,12 +125,13 @@ while datetime.now() < end_time:
 ```
 
 ```py
+end_time = datetime.now() + timedelta(hours=48)
 while datetime.now() < end_time:
     time.sleep(300)
     value = read()
     msg = value.decode('utf-8')
 ```
-
+This part defines when to end the program, using datetime and tinedelte methodes[^8]. 
 ```py
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
