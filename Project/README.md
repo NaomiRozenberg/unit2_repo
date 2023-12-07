@@ -123,6 +123,18 @@ while datetime.now() < end_time:
 
 ```
 
+```py
+while datetime.now() < end_time:
+    time.sleep(300)
+    value = read()
+    msg = value.decode('utf-8')
+```
+
+```py
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+```
+
 # Criteria D: Functionality
 
 A 7 min video demonstrating the proposed solution with narration
