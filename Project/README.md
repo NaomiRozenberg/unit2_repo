@@ -28,6 +28,7 @@ We, Naomi and Dylan, will design and make a program that provides information of
 [^6]:Python Geeks. “Advantages of Python: Disadvantages of Python.” Python Geeks, 26 June 2021, https://pythongeeks.org/advantages-disadvantages-of-python/. 
 [^7]: Real Python. “Python vs C++: Selecting the Right Tool for the Job.” Real Python, Real Python, 19 June 2021, https://realpython.com/python-vs-cpp/#memory-management.
 [^8]: Taken from stack overflow https://stackoverflow.com/questions/42504295/python-datetime-over-one-day
+[^9]: Taken from python programming https://www.programiz.com/python-programming/datetime/strftime
 
 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
 1. ```[HL]``` The local variables will be measure using a set of 3 sensors around the dormitory.
@@ -123,7 +124,7 @@ while datetime.now() < end_time:
 
 
 ```
-
+This part defines when to end the program, using datetime and tinedelte methodes[^8]. 
 ```py
 end_time = datetime.now() + timedelta(hours=48)
 while datetime.now() < end_time:
@@ -131,7 +132,7 @@ while datetime.now() < end_time:
     value = read()
     msg = value.decode('utf-8')
 ```
-This part defines when to end the program, using datetime and tinedelte methodes[^8]. 
+This part defines the timestamp, which helps track when the measurement was taken [^9]. 
 ```py
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
