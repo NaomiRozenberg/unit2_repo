@@ -138,6 +138,8 @@ This part defines the timestamp, which helps track when the measurement was take
 
 ```
 
+In the codes above, we connected the sensor on the arduino and used it to record the temperature and humidity. After that, we used writeline function to store the data and time (every 5 minutes) into a local csv file named "weather.csv". #can u explain the timestamp shit cuz u did this part#
+
 # Criteria D: Functionality
 
 A 7 min video demonstrating the proposed solution with narration
