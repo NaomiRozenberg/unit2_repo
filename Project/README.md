@@ -63,6 +63,15 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 4|Make the code create and then append the data into two sepparate csv files|A file titled "weathear.csv" that store data in new lines|20min|Nov 26|C
 5|write the Design statement| Make the Design statement infotmetive| 10min| Nov 28| A 
 6| Run our program in R1-11B | Measuring Humidity and temperature in R1-11B |48H | Nov 30 - Dec 2 |C| 
+7| Make a program to extract the temperature information from weather.csv (Temp.py)| 20min|C|
+8| Make a program to extract the humidity information from weather.csv (Hum.py)| 20min|C|
+9| Make a program to get sensor ID numbers from the Api (libApi.py)| 30min|C|
+10| Make a program which makes a list per each sensor, with all its values and unit (weather_reader.py)| 30min|C|
+11| Make 3 flow diagrams to represent 3 diffrent algorithms in the project| 2H|B|
+12| Make a test plan for the project| 2H|B|
+
+
+
 
 
 ## Test Plan
