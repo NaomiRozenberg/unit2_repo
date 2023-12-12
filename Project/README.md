@@ -72,9 +72,10 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 
 
-
-
 ## Test Plan
+
+## FlowCharts
+<img width="247" alt="Screenshot 2023-12-12 at 15 57 01" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c39be359-aa8d-4daa-9927-b8dfb9e79206">
 
 # Criteria C: Development
 
