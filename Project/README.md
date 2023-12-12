@@ -68,7 +68,7 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 9| Make a program to get sensor ID numbers from the Api (libApi.py)|This will help know which API outdoor sensors we are using|30min|Dec 10|C|
 10| Make a program which makes a list per each sensor, with all its values and unit (weather_reader.py)|The information will be used for Graphing |30min|Dec 11|C|
 11| Make 3 flow diagrams to represent 3 diffrent algorithms in the project|Present what the code dose in a simple way so the customer understands how the code works|2H|Dec 11|B|
-12| Make a test plan for the project| Outline how we would test the code to make sure it works|2H|Dec 12 B|
+12| Make a test plan for the project| Outline how we would test the code to make sure it works|2H|Dec 12 |B|
 
 
 
