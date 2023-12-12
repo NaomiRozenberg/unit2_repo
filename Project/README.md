@@ -64,11 +64,11 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 5|write the Design statement| Make the Design statement infotmetive| 10min| Nov 28| A 
 6| Run our program in R1-11B | Measuring Humidity and temperature in R1-11B |48H | Nov 30 - Dec 2 |C| 
 7| Make a program to extract the temperature information from weather.csv (Temp.py)|The information will be used for Graphing| 20min|9 Dec|C|
-8| Make a program to extract the humidity information from weather.csv (Hum.py)|The information will be used for Graphing |20min|9 Dec C|
+8| Make a program to extract the humidity information from weather.csv (Hum.py)|The information will be used for Graphing |20min|9 Dec |C|
 9| Make a program to get sensor ID numbers from the Api (libApi.py)|This will help know which API outdoor sensors we are using|30min|Dec 10|C|
 10| Make a program which makes a list per each sensor, with all its values and unit (weather_reader.py)|The information will be used for Graphing |30min|Dec 11|C|
 11| Make 3 flow diagrams to represent 3 diffrent algorithms in the project|Present what the code dose in a simple way so the customer understands how the code works|2H|Dec 11|B|
-12| Make a test plan for the project| Outline how we would test the code to make sure it works|Dec 12 |2H|B|
+12| Make a test plan for the project| Outline how we would test the code to make sure it works|2H|Dec 12 B|
 
 
 
