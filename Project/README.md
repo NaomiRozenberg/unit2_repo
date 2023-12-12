@@ -120,7 +120,7 @@ while datetime.now() < end_time:
     value = read()
     msg = value.decode('utf-8')
 
-    if not "Hello" in msg:
+    if "Hello" not in msg:
         print(msg)
         hum, temp = msg.split(" ")
         temp = temp.split(":")[1][0:-3]
