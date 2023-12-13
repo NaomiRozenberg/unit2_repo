@@ -120,6 +120,9 @@ This part defines the timestamp, which helps track when the measurement was take
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 ```
+This image proves the collation of data to the csv file was successful 
+<img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
+
 
 
 # Criteria D: Functionality
