@@ -52,8 +52,6 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 **Fig.1** shows the system diagram for the proposed solution (**SL**). The indoor variables will be measured using an Arduino microprocessor and one sensor DHT11 conencted to the local computer (Laptop) located inside a room. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally.
 
-### How data is stored ###
-We store temperature and humidity data recorded from the sensor in a local csv file called "weather.csv".
 
 
 ## Record of Tasks
@@ -89,6 +87,19 @@ We store temperature and humidity data recorded from the sensor in a local csv f
 
 **Fig.4** Shows the algorithm of weather_check.py. Which measures the temperature and the humidity every 5 minutis for 48 hours and writes the clues in a csv in addition to a time stamp to follow up on the timing. 
 
+## How data is stored ##
+
+We store temperature and humidity data recorded from the sensor to a local csv file called "weather.csv".
+
+In the python file "weather_check.py" the file was first opened, and we used the writerow method to write a new row whenever there's new data recorded. They all follow the format (temperature, humidity, time).
+
+```.py
+
+with open(csv_file_path, mode='a', newline='') as file:
+            csv_writer = csv.writer(file)
+            csv_writer.writerow([temp, hum, timestamp])
+
+```
 
 # Criteria C: Development
 
@@ -100,15 +111,62 @@ We store temperature and humidity data recorded from the sensor in a local csv f
 4. if statement
 5. Generating grpahs with matplotlib
 6. API Requests
-7. Timing 
-   
+7. Timing
+8. writing rows in a csv file
+9. read data from a csv file
+10. calculate the mean, median, and standard deviation of a set of data
+11. smoothing a graph using smoothing function
+
+## Existing tools used
+
+| Software tool  | Coding structure tools | Libraries  |
+|----------------|------------------------|------------|
+| Python/Pycharm | For loop               | matplotlib |
+|                | While loop             | datetime   |
+|                | API requests           | requests   |
+|                |                        | numpy      |
+|                |                        |            |   
+
+
+
 
 ## Development
+
+### Computational thinking
+
+
+
+### Codes breakdown
+
+#### Smoothing
+
+```.py
+
+def smoothing(values: [], size_window: int = 5):
+    x = []
+    y = []
+    for i in range(0, len(values), size_window):
+        window_mean = sum(values[i:i + size_window])/size_window
+        y.append(window_mean)
+        x.append(i)
+    return x, y
+
+```
+
+The client needs a clear graphical representation of data that helps him visualize the data. To achieve this, we designed a code that makes a curve smooth in a graph. 
+First, we defined a function name "smoothing" with the two parameters, values which is a list and size_window which has the default value of 5. After initializing two empty lists, x and y, we used a for loop to calculate the mean of the current value of size_window and i, and append them to x and y respectively. After the loop ends, x and y are returned as smoothed values. With this function, the client is able to better understand a curve in a graph.
+
+<img width="570" alt="Screenshot 2023-12-14 at 4 01 30" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/ba3a21e5-ed4f-49fa-8791-cec8a6b161d1">
+
+This graph is an example of the usage of smoothing function. The curves in the graph represent humidity data collected from two sensors and thir average value. Three curves in the graph are smoothed using the function. 
+
+#### check_weather.py
+
 The next 2 pieces of code are taken from weather_check.py which collects data from DHT11 sensor connected to the arduino. We connected the sensor on the arduino and used it to record the temperature and humidity. 
 
 This part defines when to end the program, using datetime and tinedelte methodes[^8]. We used writeline function to store the data and time (every 5 minutes) into a local csv file named "weather.csv". 
 
-```py
+```.py
 end_time = datetime.now() + timedelta(hours=48)
 while datetime.now() < end_time:
     time.sleep(300)
@@ -117,7 +175,7 @@ while datetime.now() < end_time:
 ```
 
 This part defines the timestamp, which helps track when the measurement was taken [^9]. 
-```py
+```.py
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 ```
