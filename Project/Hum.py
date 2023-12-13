@@ -1,4 +1,3 @@
-```py 
 import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
@@ -30,4 +29,3 @@ plt.gca().xaxis.set_major_formatter(plt.matplotlib.dates.DateFormatter('%Y-%m-%d
 plt.xticks(rotation=45)
 
 plt.show()
-```
