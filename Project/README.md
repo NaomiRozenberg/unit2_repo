@@ -77,9 +77,10 @@ We store temperature and humidity data recorded from the sensor in a local csv f
 ## Test Plan
 
 ## FlowCharts
-<img width="294" alt="Screenshot 2023-12-13 at 10 41 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/4578a5a9-9776-4df1-9d7e-ead9a3633f51">
-<img width="387" alt="Screenshot 2023-12-13 at 11 15 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ba8df7c5-9f5f-4939-8535-307d5b5034c9">
-<img width="702" alt="Screenshot 2023-12-13 at 11 45 13" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/38676a43-7269-45fe-828a-c125ffa68da1">
+<img width="390" alt="Screenshot 2023-12-13 at 15 06 26" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c52a7faf-5805-4ec3-8484-b9a7d54bc4a3">
+<img width="465" alt="Screenshot 2023-12-13 at 15 02 09" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/4f968cf9-7fa7-45eb-baf5-c1522f6a7729">
+<img width="378" alt="Screenshot 2023-12-13 at 15 02 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/9bf41696-8948-461c-b4ac-8e60b19fa034">
+
 
 # Criteria C: Development
 
