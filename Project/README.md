@@ -78,8 +78,13 @@ We store temperature and humidity data recorded from the sensor in a local csv f
 
 ## FlowCharts
 <img width="390" alt="Screenshot 2023-12-13 at 15 06 26" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c52a7faf-5805-4ec3-8484-b9a7d54bc4a3">
+Fig 1: Shows the algorithim of Hum.py. Which extracts Humidity information from weather.csv, and Graghs the information with formatted X-ticks timestamps.  
+
+
 <img width="465" alt="Screenshot 2023-12-13 at 15 02 09" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/4f968cf9-7fa7-45eb-baf5-c1522f6a7729">
+Fig 2 
 <img width="378" alt="Screenshot 2023-12-13 at 15 02 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/9bf41696-8948-461c-b4ac-8e60b19fa034">
+Fig 3 
 
 
 # Criteria C: Development
