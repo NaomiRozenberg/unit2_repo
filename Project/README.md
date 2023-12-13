@@ -99,7 +99,6 @@ We store temperature and humidity data recorded from the sensor in a local csv f
 3. While loop
 4. if statement
 5. Generating grpahs with matplotlib
-6. Connecting the raspberry sensor
    
 
 ## Development
