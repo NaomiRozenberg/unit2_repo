@@ -99,51 +99,10 @@ Fig 3: Shows the algorithm of weather_check.py. Which measures the temperature a
    
 
 ## Development
-DHT11 sensor data collection from arduino
+The next 2 pieces of code are taken from weather_check.py which collects data from DHT11 sensor connected to the arduino. We connected the sensor on the arduino and used it to record the temperature and humidity. 
 
-```py
-from datetime import datetime, timedelta
-import csv
-import serial
-import time
+This part defines when to end the program, using datetime and tinedelte methodes[^8]. We used writeline function to store the data and time (every 5 minutes) into a local csv file named "weather.csv". 
 
-arduino = serial.Serial(port='/dev/cu.usbserial-10', baudrate=9600, timeout=.1)
-
-
-def read():
-    data = ""
-    while len(data) < 1:
-        data = arduino.readline()
-    return data
-
-
-csv_file_path = 'weather.csv'
-end_time = datetime.now() + timedelta(hours=48)
-
-with open(csv_file_path, mode='w', newline='') as file:
-    csv_writer = csv.writer(file)
-    csv_writer.writerow(['Temperature', 'Humidity', 'Timestamp'])
-
-while datetime.now() < end_time:
-    time.sleep(300)
-    value = read()
-    msg = value.decode('utf-8')
-
-    if "Hello" not in msg:
-        print(msg)
-        hum, temp = msg.split(" ")
-        temp = temp.split(":")[1][0:-3]
-        hum = hum.split(":")[1][0:-1]
-
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-        with open(csv_file_path, mode='a', newline='') as file:
-            csv_writer = csv.writer(file)
-            csv_writer.writerow([temp, hum, timestamp])
-
-
-```
-This part defines when to end the program, using datetime and tinedelte methodes[^8]. 
 ```py
 end_time = datetime.now() + timedelta(hours=48)
 while datetime.now() < end_time:
@@ -151,13 +110,13 @@ while datetime.now() < end_time:
     value = read()
     msg = value.decode('utf-8')
 ```
+
 This part defines the timestamp, which helps track when the measurement was taken [^9]. 
 ```py
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 ```
 
-In the codes above, we connected the sensor on the arduino and used it to record the temperature and humidity. After that, we used writeline function to store the data and time (every 5 minutes) into a local csv file named "weather.csv". #can u explain the timestamp shit cuz u did this part#
 
 # Criteria D: Functionality
 
