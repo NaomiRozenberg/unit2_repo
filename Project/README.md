@@ -79,6 +79,7 @@ We store temperature and humidity data recorded from the sensor in a local csv f
 ## FlowCharts
 <img width="294" alt="Screenshot 2023-12-13 at 10 41 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/4578a5a9-9776-4df1-9d7e-ead9a3633f51">
 <img width="387" alt="Screenshot 2023-12-13 at 11 15 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ba8df7c5-9f5f-4939-8535-307d5b5034c9">
+<img width="702" alt="Screenshot 2023-12-13 at 11 45 13" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/38676a43-7269-45fe-828a-c125ffa68da1">
 
 # Criteria C: Development
 
