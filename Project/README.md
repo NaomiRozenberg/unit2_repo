@@ -74,6 +74,22 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 ## Test Plan
 
+| Test No. | Test type           | Input                                                    | Process                                                                                                                      | Expected output                                                                                                                         |
+|----------|---------------------|----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| 1        | Unit testing        | Arduino connected to the computer,  weather_check code.  | 1, open weather_check.py 2, run the code                                                                                     | 'Hello' should be printed as the program starts running to indicate that the sensor is  successfully connected.                         |
+| 2        | Performance testing | weather_check code.                                      | 1, connect arduino and sensor 2, run the code                                                                                | The temperature and humidity  should be recorded every 5  minutes and stored in weather.csv The sensor should respond without lagging.  |
+| 3        | Integration testing | weather.csv                                              | 1, open weather.csv 2, check if all data are recorded in the correct format                                                  | Data is recorded in the correct format (temperature, humidity, timestamp) and is complete (there should be 48*12 lines of data).        |
+| 4        | Unit testing        | All codes for graphs                                     | 1, run the codes                                                                                                             | Diagrams that are correctly labelled, with the correct titles and curves. All curves are smoothed.                                      |
+| 5        | Integration testing | http://192.168.6.153/readings                            | 1, visit http://192.168.6.153/readings                                                                                       | The readings contain all the data from all sensors that we need for graphing.                                                           |
+| 6        | Unit testing        | The code for indoor temperature                          | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
+| 7        | Unit testing        | The code for outdoor temperature                         | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
+| 8        | Unit testing        | The code for indoor humidity                             | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
+| 9        | Unit testing        | The code for outdoor humidity                            | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
+| 10       | Code review         | -                                                        | 1, check if the code has  adequate comments, variables  are correctly named, and the  code runs smoothly without any error.  | The code includes comments explaining what is happening. All variables are  correctly named to help understand what they represent.     |
+| 11       |                     |                                                          |                                                                                                                              |                                                                                                                                         |
+
+
+
 ## FlowCharts
 <img width="390" alt="Screenshot 2023-12-13 at 15 06 26" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c52a7faf-5805-4ec3-8484-b9a7d54bc4a3">
 
@@ -136,7 +152,7 @@ with open(csv_file_path, mode='a', newline='') as file:
 Below are what we developed to fulfil the client's success criteria.
 
 
-## The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
+## 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
 
 To fulfil this requirement, we need both indoor and outdoor data recorded every five minutes in 48 hours, which include values of humidity and temperature, as well as time. For outdoor (remote) data, there are three sensors (id 0, id 1, id 2) for temperature and two (id 4, id 5) for humidity. In order to compare these data, we calculated the mean for three temperature sensors and two humidity sensors, and respectively compared these two curves to the indoor temperature stored in the local csv file. 
 
@@ -197,7 +213,7 @@ def smoothing(values: [], size_window: int = 5):
 
 <img width="570" alt="Screenshot 2023-12-14 at 4 01 30" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/ba3a21e5-ed4f-49fa-8791-cec8a6b161d1">
 
-**Fig.5** This graph is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
+This graph is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
 
 
 
@@ -224,23 +240,33 @@ We designed this code to specify the timespan that we need for humidity. We chos
 
 With the assistance of these functions that we defined, we can now compare all data and provide the client with a clear graphical representation of the humidity and temperature indoor and outdoor. 
 
-<img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">**Fig.6** This is the comparison between indoor and outdoor humidity
+<img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">
+This is the comparison between indoor and outdoor humidity
 
 
 
-**Fig.7** Similarly, we compared the average outdoor temperature with the indoor temperature. 
+
+
+Similarly, we compared the average outdoor temperature with the indoor temperature. 
+
+
 <img width="585" alt="Screenshot 2023-12-14 at 11 30 31" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/64a4c26f-ff10-4f62-9d64-53834e10147b">
 
 
 
-## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```,And the solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+Note that all data have been recorded in the same time period, 2023-11-30 20:00 to 2023-12-2 20:00. 48 hours in total. 
 
-<img width="631" alt="Screenshot 2023-12-14 at 11 44 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c9e3ccd8-291c-4c16-b39f-522e65c48a0b">**Fig.8** Shows the indoor linear model for Temperature
+## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
+## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
+## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
-<img width="631" alt="Screenshot 2023-12-14 at 11 45 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/9cd1d84f-6f58-4819-b31c-cba2985e53fa">**Fig.9** Shows the indoor linear model for Humidity
 
-##  The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-##  ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
+
+
+
+
 #### check_weather.py
 
 The next 2 pieces of code are taken from weather_check.py which collects data from DHT11 sensor connected to the arduino. We connected the sensor on the arduino and used it to record the temperature and humidity. 
@@ -263,8 +289,6 @@ This part defines the timestamp, which helps track when the measurement was take
 This image proves the collation of data to the csv file was successful 
 
 <img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
-
-
 
 ### Computational thinking
 
