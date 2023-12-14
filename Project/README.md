@@ -330,7 +330,8 @@ plt.axhline(y=min(b), color="orange")
 plt.axhline(y=np.mean(b), color="blue")
 ```
 
-<img width="580" alt="Screenshot 2023-12-14 at 14 54 23" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/11f73119-2fdd-44db-b20b-919a2db7cb2f">
+<img width="599" alt="Screenshot 2023-12-14 at 14 58 24" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/97822955-e73e-4e2c-98e8-a1b1f8cc557c">
+
 
 The graph with three lines indicating max, min and mean. 
 
