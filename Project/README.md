@@ -394,13 +394,16 @@ This image proves the collation of data to the csv file was successful
 
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 
-Refer two success criteria 2.
-We found a linear model for predicting the temperature and humidity inthe future 12 hours. 
+<img width="631" alt="Screenshot 2023-12-14 at 11 41 04" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3324524f-897f-40ca-a8f7-94ea742813f6">
+
+
+<img width="631" alt="Screenshot 2023-12-14 at 11 34 18" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/08a31e5e-2b2a-47ee-ad4d-b2589049a3b2">
 
 
 ## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
 
+<img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
 
 
 
@@ -410,6 +413,5 @@ We found a linear model for predicting the temperature and humidity inthe future
 # Criteria D: Functionality
 
 ## Scientific poster
-<img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
 
 A 7 min video demonstrating the proposed solution with narration
