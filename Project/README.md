@@ -234,10 +234,10 @@ With the assistance of these functions that we defined, we can now compare all d
 
 
 ## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
-<img width="631" alt="Screenshot 2023-12-14 at 11 44 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c9e3ccd8-291c-4c16-b39f-522e65c48a0b">
-**Fig.8** Shows the indoor linear model for Temperature
-<img width="631" alt="Screenshot 2023-12-14 at 11 45 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/9cd1d84f-6f58-4819-b31c-cba2985e53fa">
-**Fig.9** Shows the indoor linear model for Humidity
+
+<img width="631" alt="Screenshot 2023-12-14 at 11 44 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c9e3ccd8-291c-4c16-b39f-522e65c48a0b">**Fig.8** Shows the indoor linear model for Temperature
+
+<img width="631" alt="Screenshot 2023-12-14 at 11 45 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/9cd1d84f-6f58-4819-b31c-cba2985e53fa">**Fig.9** Shows the indoor linear model for Humidity
 
 ## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
