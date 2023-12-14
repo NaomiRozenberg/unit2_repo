@@ -132,13 +132,51 @@ with open(csv_file_path, mode='a', newline='') as file:
 
 ## Development
 
-### Computational thinking
+
+Below are what we developed to fulfil the client's success criteria.
+
+
+## 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
+
+To fulfil this requirement, we need both indoor and outdoor data recorded every five minutes in 48 hours, which include values of humidity and temperature, as well as time. For outdoor (remote) data, there are three sensors (id 0, id 1, id 2) for temperature and two (id 4, id 5) for humidity. In order to compare these data, we calculated the mean for three temperature sensors and two humidity sensors, and respectively compared these two curves to the indoor temperature stored in the local csv file. 
+
+To achieve this, we defined a function called get_readings which extracts the readings from the api server which has the recordings of the outdoor data of humidity and termperature. 
+
+```.py
+
+def get_readings(ip: str = '192.168.6.153'):
+    data = requests.get(f'http://{ip}/readings')
+    data = data.json()
+    x = data['readings'][0]
+    return x
+
+```
 
 
 
-### Codes breakdown
 
-#### Smoothing
+Considering that different sensors represent different kinds of data (temperature and humidity), we realized that we need a function to get a set of data specifically from one sensor in order to calculate the mean and compare with the indoor data. 
+
+```.py
+
+def get_sensors(ids: list() = [1, 2]):
+    recordings = get_readings()
+    my_sensors = {}
+    for i in ids:
+        my_sensors[i] = []
+    for rec in recordings:
+        id_sensor = rec['sensor_id']
+        if id_sensor in ids:
+            value = rec['value']
+            my_sensors[id_sensor].append(value)
+    return my_sensors
+
+```
+
+
+
+Additionally, the client needs a clear graphical representation of data that helps him visualize the data. To achieve this, we designed a code that makes a curve smooth in a graph. 
+First, we defined a function name "smoothing" with the two parameters, values which is a list and size_window which has the default value of 5. After initializing two empty lists, x and y, we used a for loop to calculate the mean of the current value of size_window and i, and append them to x and y respectively. After the loop ends, x and y are returned as smoothed values. With this function, the client is able to better understand a curve in a graph. 
 
 ```.py
 
@@ -153,12 +191,59 @@ def smoothing(values: [], size_window: int = 5):
 
 ```
 
-The client needs a clear graphical representation of data that helps him visualize the data. To achieve this, we designed a code that makes a curve smooth in a graph. 
-First, we defined a function name "smoothing" with the two parameters, values which is a list and size_window which has the default value of 5. After initializing two empty lists, x and y, we used a for loop to calculate the mean of the current value of size_window and i, and append them to x and y respectively. After the loop ends, x and y are returned as smoothed values. With this function, the client is able to better understand a curve in a graph.
+
+
+
 
 <img width="570" alt="Screenshot 2023-12-14 at 4 01 30" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/ba3a21e5-ed4f-49fa-8791-cec8a6b161d1">
 
-This graph is an example of the usage of smoothing function. The curves in the graph represent humidity data collected from two sensors and thir average value. Three curves in the graph are smoothed using the function. 
+This graph is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
+
+
+
+
+```.py
+
+for reading_hum in p:
+    if reading_hum['sensor_id'] in hum:
+        print(reading_hum)
+        print(reading_hum['value'])
+
+        if 12760 <= int(reading_hum['id']) <= 21089:
+            if int(reading_hum['sensor_id']) == 4:
+                hum_48hrs_data_id4.append(reading_hum['value'])
+                datetime_string = reading_hum['datetime']
+            else:
+                hum_48hrs_data_id5.append(reading_hum['value'])
+```
+We designed this code to specify the timespan that we need for humidity. We chose the same timespan as the indoor data for a more precise and meaningful comparison. 
+
+
+
+
+
+With the assistance of these functions that we defined, we can now compare all data and provide the client with a clear graphical representation of the humidity and temperature indoor and outdoor. 
+
+<img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">
+This is the comparison between indoor and outdoor humidity
+
+
+
+Similarly, we compared the average outdoor temperature with the indoor temperature. 
+<img width="585" alt="Screenshot 2023-12-14 at 11 30 31" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/64a4c26f-ff10-4f62-9d64-53834e10147b">
+
+
+
+## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
+## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
+## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
+
+
+
+
 
 #### check_weather.py
 
@@ -183,7 +268,7 @@ This image proves the collation of data to the csv file was successful
 
 <img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
 
-
+### Computational thinking
 
 # Criteria D: Functionality
 
