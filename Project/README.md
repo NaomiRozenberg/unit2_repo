@@ -152,7 +152,7 @@ with open(csv_file_path, mode='a', newline='') as file:
 Below are what we developed to fulfil the client's success criteria.
 
 
-## The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
+## 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
 
 To fulfil this requirement, we need both indoor and outdoor data recorded every five minutes in 48 hours, which include values of humidity and temperature, as well as time. For outdoor (remote) data, there are three sensors (id 0, id 1, id 2) for temperature and two (id 4, id 5) for humidity. In order to compare these data, we calculated the mean for three temperature sensors and two humidity sensors, and respectively compared these two curves to the indoor temperature stored in the local csv file. 
 
@@ -232,6 +232,8 @@ for reading_hum in p:
             else:
                 hum_48hrs_data_id5.append(reading_hum['value'])
 ```
+
+
 We designed this code to specify the timespan that we need for humidity. We chose the same timespan as the indoor data for a more precise and meaningful comparison. 
 
 
@@ -239,6 +241,7 @@ We designed this code to specify the timespan that we need for humidity. We chos
 
 
 With the assistance of these functions that we defined, we can now compare all data and provide the client with a clear graphical representation of the humidity and temperature indoor and outdoor. 
+
 
 <img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">
 This is the comparison between indoor and outdoor humidity
@@ -256,13 +259,73 @@ Similarly, we compared the average outdoor temperature with the indoor temperatu
 
 Note that all data have been recorded in the same time period, 2023-11-30 20:00 to 2023-12-2 20:00. 48 hours in total. 
 
-##  The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```and The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
-<img width="631" alt="Screenshot 2023-12-14 at 11 45 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/cfbda129-f973-41f5-8324-d283f26da369">
-<img width="631" alt="Screenshot 2023-12-14 at 11 44 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/81022003-5677-4628-8ac1-b23944fbd7e6">
+## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
+
+To fulfil this criteria, we used the polyfit method from the numpy library. This method provide a line of best fit for an existing curve. Below is an example of the calculation of the linear model we created using the polyfit method. 
+
+```.py
+
+m, b = np.polyfit(time_lin, temp_lin, 1)
+temp_lin_model = [m * t + b for t in time_lin]
+
+```
 
 
-## The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-##  ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
+This is the conmplete code that we use to generate the linear model together with the original curve smoothed using smoothing method. 
+
+```.py
+with open('weather.csv', mode='r') as f:
+    csv_reader = csv.DictReader(f)
+    for row in csv_reader:
+        temp_2 = float(row['Temperature'])
+        temp.append(temp_2)
+        time.append(5 * len(temp))
+        time_lin.append(5 * len(temp))
+        temp_lin.append(temp_2)  # Accumulate actual temperature values for linear model
+
+# Fit a linear model after accumulating data
+m, b = np.polyfit(time_lin, temp_lin, 1)
+
+# Generate linear model predictions
+temp_lin_model = [m * t + b for t in time_lin]
+
+# Smoothing
+smoothed_x, smoothed_y = smoothing(values=temp)
+
+# Plotting
+plt.plot(smoothed_x, smoothed_y, label="Original curve")
+plt.plot(time_lin, temp_lin_model, label=f"Linear Model: f(t) = {m:.2f}t + {b:.2f}")
+plt.title("Linear model for indoor temperature")
+plt.xlabel("Time (minutes)")
+plt.ylabel("Room temperature")
+plt.legend()
+plt.show()
+
+```
+
+
+<img width="617" alt="Screenshot 2023-12-14 at 13 16 23" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/dce5fd96-f570-4f5b-a99a-cee9d7c4c6bc">
+
+This is the graph generated using the code above. The linear equation for the indoor temperature is y=23.89
+
+
+
+Similarly, we used the same method to generate graphs for indoor humidity, outdoor temperature, and outdoor humidity. 
+
+<img width="617" alt="Screenshot 2023-12-14 at 13 29 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/fb9f9672-c8ea-4de5-ba52-7cf33bd9b40b">
+
+
+
+
+## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
+## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
+
+
+
+
 
 #### check_weather.py
 
@@ -281,17 +344,15 @@ while datetime.now() < end_time:
 This part defines the timestamp, which helps track when the measurement was taken [^9]. 
 ```.py
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
 ```
 This image proves the collation of data to the csv file was successful 
+
 <img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
-
-
 
 ### Computational thinking
 
 # Criteria D: Functionality
-## The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
-
 <img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
 
 A 7 min video demonstrating the proposed solution with narration
