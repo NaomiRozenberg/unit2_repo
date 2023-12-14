@@ -364,20 +364,10 @@ This is the examples of standard deviation errorbar with the outdoor temperature
 
 
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
-## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
-
-Refer two success criteria 2.
-We found a linear model for predicting the temperature and humidity inthe future 12 hours. 
-
-
-## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
-
-
-
-
-
 
 #### check_weather.py
+
+Below is the demonstration of how we store data into the csv file. We also included the code that we created with the purpose of writing rows every 5 minutes on the csv file. Thus, all the data are stored safely. 
 
 The next 2 pieces of code are taken from weather_check.py which collects data from DHT11 sensor connected to the arduino. We connected the sensor on the arduino and used it to record the temperature and humidity. 
 
@@ -399,6 +389,21 @@ This part defines the timestamp, which helps track when the measurement was take
 This image proves the collation of data to the csv file was successful 
 
 <img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
+
+
+
+## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+
+Refer two success criteria 2.
+We found a linear model for predicting the temperature and humidity inthe future 12 hours. 
+
+
+## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
+
+
+
+
 
 ### Computational thinking
 
