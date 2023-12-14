@@ -42,16 +42,18 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 1. How does our use of technology shape our understanding of the environment
 
-The use of technology shapes our understanding of environment in various ways. As technology is constantly developing, our understanding of the planet that we live in is changing as well. Some usages of technology that help us understand the environment include data collection, modelling, and monitoring, data analytics, etc. These methods help us predict the future weather, identify the right action to take to solve global warming, and recognize weather patterns. Thus, with the assistance of modern technology, we make data meaningful and relevant as we try to understand our environment based on them. 
+   The use of technology shapes our understanding of environment in various ways. As technology is constantly developing, our understanding of the planet that we live in    is changing as well. Some usages of technology that help us understand the environment include data collection, modelling, and monitoring, data analytics, etc. These     methods help us predict the future weather, identify the right action to take to solve global warming, and recognize weather patterns. Thus, with the assistance of       modern technology, we make data meaningful and relevant as we try to understand our environment based on them. 
 
 3. What responsibilities do we have as technologists when it comes to handling personal data related to our living spaces?
 
-We should be very careful and responsible when handling personal data. We should first ensure the privacy of the data. In John's case, the data is private and won't be disclosed. We should also make sure that the personal data is consensual: for instance, we had the consent from all residents in the room when we collected the temperature and humidity data. We are responsible to keep the data private and get consent from everyone who is related to the data. 
+   We should be very careful and responsible when handling personal data. We should first ensure the privacy of the data. In John's case, the data is private and won't      be disclosed. We should also make sure that the personal data is consensual: for instance, we had the consent from all residents in the room when we collected the        temperature and humidity data. We are responsible to keep the data private and get consent from everyone who is related to the data. 
 
 
 5. What cultural and contextual factors might impact our interpretation of the results, especially when comparing our local readings with those from the campus?
 
-Cultural and contextual factors can have a huge impact on one's understanding and intepretation of data. For example, an unusual rise in temperature of a place that is usually cold can indicate human activities. Some of the contexual factors that we need to take into consideration are: the previous readings, the surroundings of the sensor location, human activities that may disrupt the continuity of data. 
+   Cultural and contextual factors can have a huge impact on one's understanding and intepretation of data. For example, an unusual rise in temperature of a place that      is usually cold can indicate human activities. Some of the contexual factors that we need to take into consideration are: the previous readings, the surroundings of      the sensor location, human activities that may disrupt the continuity of data. 
+
+
 
 # Criteria B: Design #
 
@@ -94,8 +96,7 @@ Cultural and contextual factors can have a huge impact on one's understanding an
 | 7        | Unit testing        | The code for outdoor temperature                         | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
 | 8        | Unit testing        | The code for indoor humidity                             | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
 | 9        | Unit testing        | The code for outdoor humidity                            | 1, run the code                                                                                                              | Correct diagram is showed.                                                                                                              |
-| 10       | Code review         | All Code                                                       | 1, check if the code has  adequate comments, variables  are correctly named, and the  code runs smoothly without any error.  | The code includes comments explaining what is happening. All variables are  correctly named to help understand what they represent.     |
-| 11       |                     |                                                          |                                                                                                                              |                                                                                                                                         |
+| 10       | Code review         | -                                                        | 1, check if the code has  adequate comments, variables  are correctly named, and the  code runs smoothly without any error.  | The code includes comments explaining what is happening. All variables are  correctly named to help understand what they represent.     |
 
 
 
@@ -125,6 +126,7 @@ with open(csv_file_path, mode='a', newline='') as file:
             csv_writer.writerow([temp, hum, timestamp])
 
 ```
+
 
 # Criteria C: Development
 
