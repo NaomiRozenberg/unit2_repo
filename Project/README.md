@@ -293,5 +293,6 @@ This image proves the collation of data to the csv file was successful
 ### Computational thinking
 
 # Criteria D: Functionality
+<img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
 
 A 7 min video demonstrating the proposed solution with narration
