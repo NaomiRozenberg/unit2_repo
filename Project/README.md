@@ -317,7 +317,23 @@ Similarly, we used the same method to generate graphs for indoor humidity, outdo
 
 
 
-## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum.
+
+In this program, we aim at providing the client with basic information such as maximum, mininum, mean. 
+
+Below is an example of how we achieved this.
+
+```.py
+plt.plot(a, b, color="black")
+plt.axhline(y=max(b), color="red")
+plt.axhline(y=min(b), color="orange")
+plt.axhline(y=np.mean(b), color="blue")
+```
+
+<img width="580" alt="Screenshot 2023-12-14 at 14 54 23" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/11f73119-2fdd-44db-b20b-919a2db7cb2f">
+
+The graph with three lines indicating max, min and mean. 
+
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
