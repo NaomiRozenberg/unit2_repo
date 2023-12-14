@@ -394,6 +394,10 @@ This image proves the collation of data to the csv file was successful
 
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 
+We used a linear model for predicting the temperature and humidity in the future 12 hours. We achieved this by using the polyfit method in numpy library, which finds the line of best fit for a curve provided. According the curves in the graphs below, we believe that the pattern is likely to continue through the green line. We illustrated the pattern by the green dotted line. 
+
+Below are two graphs for the pridiction of temperature and humidity. 
+
 <img width="631" alt="Screenshot 2023-12-14 at 11 41 04" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3324524f-897f-40ca-a8f7-94ea742813f6">
 
 
