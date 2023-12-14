@@ -423,10 +423,9 @@ Below are two graphs for the pridiction of temperature and humidity.
 
 
 
-### Computational thinking
-
 # Criteria D: Functionality
 
-## Scientific poster
 
 A 7 min video demonstrating the proposed solution with narration
+
+https://youtu.be/NuUaMJpoXHU
