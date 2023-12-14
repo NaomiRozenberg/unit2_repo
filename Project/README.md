@@ -353,9 +353,10 @@ plt.fill_between(a, b - std_temp, b + std_temp, alpha=0.5, linewidth=0, color="#
 ```
 This program is an example of how we generated errobars with standard deviation. We used the std funciton from numpy library, and input two values, a and b, which represent the humidity data from outside collected by two sensors. And we used fill_between function to make it look continuous.
 
-<img width="594" alt="Screenshot 2023-12-14 at 15 28 05" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/9cc05cc4-83c3-48d9-9816-48777c494fb1">
 
-This is the graph of standard deviation errorbar with the indoor humidity curve. However, since we only have one sensor for indoor humidity and temperature, it's not possible to calculate standard deviation for it. 
+<img width="598" alt="Screenshot 2023-12-14 at 15 35 35" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/313b1ee9-4fa3-44ed-aae7-38857b7def14">
+
+This is the graph of standard deviation errorbar with the outdoor temperature curve. However, since we only have one sensor for indoor humidity and temperature, it's not possible to calculate standard deviation for it. 
 
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
@@ -392,6 +393,8 @@ This image proves the collation of data to the csv file was successful
 ### Computational thinking
 
 # Criteria D: Functionality
+
+## Scientific poster
 <img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
 
 A 7 min video demonstrating the proposed solution with narration
