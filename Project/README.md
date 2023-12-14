@@ -256,16 +256,9 @@ Similarly, we compared the average outdoor temperature with the indoor temperatu
 
 Note that all data have been recorded in the same time period, 2023-11-30 20:00 to 2023-12-2 20:00. 48 hours in total. 
 
-## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
-## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
-## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
-## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
-
-
-
-
-
+## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```and The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+## The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+##  ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 
 #### check_weather.py
 
@@ -284,15 +277,17 @@ while datetime.now() < end_time:
 This part defines the timestamp, which helps track when the measurement was taken [^9]. 
 ```.py
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
 ```
 This image proves the collation of data to the csv file was successful 
-
 <img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
+
+
 
 ### Computational thinking
 
 # Criteria D: Functionality
+## The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
 <img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
 
 A 7 min video demonstrating the proposed solution with narration
