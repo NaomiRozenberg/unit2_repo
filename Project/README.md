@@ -152,7 +152,7 @@ with open(csv_file_path, mode='a', newline='') as file:
 Below are what we developed to fulfil the client's success criteria.
 
 
-## 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
+## The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
 
 To fulfil this requirement, we need both indoor and outdoor data recorded every five minutes in 48 hours, which include values of humidity and temperature, as well as time. For outdoor (remote) data, there are three sensors (id 0, id 1, id 2) for temperature and two (id 4, id 5) for humidity. In order to compare these data, we calculated the mean for three temperature sensors and two humidity sensors, and respectively compared these two curves to the indoor temperature stored in the local csv file. 
 
@@ -256,7 +256,11 @@ Similarly, we compared the average outdoor temperature with the indoor temperatu
 
 Note that all data have been recorded in the same time period, 2023-11-30 20:00 to 2023-12-2 20:00. 48 hours in total. 
 
-## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```and The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+##  The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```and The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+<img width="631" alt="Screenshot 2023-12-14 at 11 45 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/cfbda129-f973-41f5-8324-d283f26da369">
+<img width="631" alt="Screenshot 2023-12-14 at 11 44 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/81022003-5677-4628-8ac1-b23944fbd7e6">
+
+
 ## The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
 ##  ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 
