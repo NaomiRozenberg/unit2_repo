@@ -330,7 +330,7 @@ plt.axhline(y=min(b), color="orange")
 plt.axhline(y=np.mean(b), color="blue")
 ```
 
-<img width="612" alt="Screenshot 2023-12-14 at 15 01 06" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/12959ff4-2e47-4d64-b5ef-53c1ced616a0">
+<img width="596" alt="Screenshot 2023-12-14 at 15 19 23" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/43f0dd38-f516-4bfe-9db1-3fc620f88635">
 
 <img width="599" alt="Screenshot 2023-12-14 at 14 58 24" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/12541e5a-9a45-483b-994e-a2f5d604eedd">
 
