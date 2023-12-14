@@ -255,6 +255,9 @@ With the assistance of these functions that we defined, we can now compare all d
 
 
 <img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">
+
+
+
 This is the comparison between indoor and outdoor humidity
 
 
@@ -328,6 +331,14 @@ Similarly, we used the same method to generate graphs for indoor humidity, outdo
 
 
 
+<img width="603" alt="Screenshot 2023-12-15 at 2 05 43" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/396d58a1-04cd-45b1-a94f-1c61f5996288">
+
+The linear model for outdoor temperature is T(t) = 0.0021798t + 12.1434129
+
+
+<img width="599" alt="Screenshot 2023-12-15 at 2 01 43" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/10d92825-5483-4791-8f5c-4eb17384dd8f">
+
+The linear model for outdoor humidity is T(t) = -0.0083250682t + 51.362422
 
 ## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum.
 
