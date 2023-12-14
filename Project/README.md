@@ -334,8 +334,12 @@ plt.axhline(y=np.mean(b), color="blue")
 
 <img width="599" alt="Screenshot 2023-12-14 at 14 58 24" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/12541e5a-9a45-483b-994e-a2f5d604eedd">
 
+<img width="598" alt="Screenshot 2023-12-14 at 15 05 36" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/44c6e59e-44d5-41fd-beea-3a6feaa06095">
 
-The graph with three lines indicating max, min and mean. 
+<img width="590" alt="Screenshot 2023-12-14 at 15 07 00" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/4a7c45af-6012-4ae3-a27a-36ed1909828a">
+
+
+The graph has three lines, indicating max, min and mean. 
 
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
