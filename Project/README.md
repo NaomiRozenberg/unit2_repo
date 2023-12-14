@@ -1,4 +1,4 @@
-![11e470e9022f4fc5b367429bcbb285bc](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/1d14b1d3-ae39-4ef3-8ec9-3329630eacae)
+![image](https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/5ecc8ee9-213d-4ac7-8519-94dc79315a4c)
 
 # Unit 2: A Distributed Weather Station for ISAK
 
@@ -16,7 +16,7 @@ Considering the budgetary constrains of the client and the hardware requirements
 
 **Design statement**
 
-We, Naomi and Dylan, will design and make a program that provides information of the temperature and huidity of the specimen room, R1-11B represented in graphs along with other useful information such as standard deviation, mean, median, mode, minimum, and maximum. The information will be summarized and synthesized and a specific suggestion based on such information will be given in order to solve the problem defined above. DHT 11 sensor is used in this program in order to keep track of information on temperature and humidity. The data is recorded every 5 minutes in 48 hours, and will be saved in a local file. After that, we will compare the two sets of data: indoor and outdoor, to give a suggestion on where John should grow devil's ivy based on the information illustrated by graphs. A prediction of the patterns of temperature and humidity in the future will be given as well. This progran is constructed with the software python, Arduino, and DHT 11 and will be evaluated by criteria A, B, and C. It takes around three weeks to be completed. 
+We, Naomi and Dylan, will design and make a program that provides information of the temperature and huidity of the specimen room, R1-11B represented in graphs along with other useful information such as standard deviation, mean, median, mode, minimum, and maximum. The information will be summarized and synthesized and a specific suggestion based on such information will be given in order to solve the problem defined above. DHT 11 sensor is used in this program in order to keep track of information on temperature and humidity. The data is recorded every 5 minutes in 48 hours, and will be saved in a local file. After that, we will compare the two sets of data: indoor and outdoor, to give a suggestion on where John should grow devil's ivy based on the information illustrated by graphs. A prediction of the patterns of temperature and humidity in the future will be given as well. This progran is constructed with the software python, Arduino, and DHT 11 sensor and will be evaluated by criteria A, B, and C. It takes around three weeks to be completed. 
 
 ## Success Criteria
 
@@ -41,8 +41,17 @@ We, Naomi and Dylan, will design and make a program that provides information of
 _TOK Connection: To what extent does ```the use of data science``` in climate research influence our understanding of environmental issues, and what knowledge questions arise regarding the ```reliability, interpretation, and ethical implications``` of data-driven approaches in addressing climate change_
 
 1. How does our use of technology shape our understanding of the environment
-2. What responsibilities do we have as technologists when it comes to handling personal data related to our living spaces?
-3. What cultural and contextual factors might impact our interpretation of the results, especially when comparing our local readings with those from the campus? 
+
+The use of technology shapes our understanding of environment in various ways. As technology is constantly developing, our understanding of the planet that we live in is changing as well. Some usages of technology that help us understand the environment include data collection, modelling, and monitoring, data analytics, etc. These methods help us predict the future weather, identify the right action to take to solve global warming, and recognize weather patterns. Thus, with the assistance of modern technology, we make data meaningful and relevant as we try to understand our environment based on them. 
+
+3. What responsibilities do we have as technologists when it comes to handling personal data related to our living spaces?
+
+We should be very careful and responsible when handling personal data. We should first ensure the privacy of the data. In John's case, the data is private and won't be disclosed. We should also make sure that the personal data is consensual: for instance, we had the consent from all residents in the room when we collected the temperature and humidity data. We are responsible to keep the data private and get consent from everyone who is related to the data. 
+
+
+5. What cultural and contextual factors might impact our interpretation of the results, especially when comparing our local readings with those from the campus?
+
+Cultural and contextual factors can have a huge impact on one's understanding and intepretation of data. For example, an unusual rise in temperature of a place that is usually cold can indicate human activities. Some of the contexual factors that we need to take into consideration are: the previous readings, the surroundings of the sensor location, human activities that may disrupt the continuity of data. 
 
 # Criteria B: Design #
 
