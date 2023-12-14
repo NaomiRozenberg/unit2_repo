@@ -259,6 +259,7 @@ Similarly, we compared the average outdoor temperature with the indoor temperatu
 
 Note that all data have been recorded in the same time period, 2023-11-30 20:00 to 2023-12-2 20:00. 48 hours in total. 
 
+
 ## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
 
 To fulfil this criteria, we used the polyfit method from the numpy library. This method provide a line of best fit for an existing curve. Below is an example of the calculation of the linear model we created using the polyfit method. 
@@ -356,10 +357,19 @@ This program is an example of how we generated errobars with standard deviation.
 
 <img width="598" alt="Screenshot 2023-12-14 at 15 35 35" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/313b1ee9-4fa3-44ed-aae7-38857b7def14">
 
-This is the graph of standard deviation errorbar with the outdoor temperature curve. However, since we only have one sensor for indoor humidity and temperature, it's not possible to calculate standard deviation for it. 
+<img width="586" alt="Screenshot 2023-12-14 at 15 41 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/8090bda7-0f77-4dcd-bb75-8c10c252fa11">
+
+
+This is the examples of standard deviation errorbar with the outdoor temperature and humidity curve. However, since we only have one sensor for indoor humidity and temperature, it's not possible to calculate standard deviation for it. 
+
 
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+
+Refer two success criteria 2.
+We found a linear model for predicting the temperature and humidity inthe future 12 hours. 
+
+
 ## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
 
