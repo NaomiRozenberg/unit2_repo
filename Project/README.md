@@ -403,7 +403,7 @@ This image proves the collation of data to the csv file was successful
 ## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
 
-<img width="800" alt="Screenshot 2023-12-14 at 12 46 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3a092b67-e428-466a-8d07-2b29f0baa55d">
+<img width="884" alt="Screenshot 2023-12-14 at 16 06 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/489cee1e-0316-4e8c-9610-6b69a9d50757">
 
 
 
