@@ -197,7 +197,7 @@ def smoothing(values: [], size_window: int = 5):
 
 <img width="570" alt="Screenshot 2023-12-14 at 4 01 30" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/ba3a21e5-ed4f-49fa-8791-cec8a6b161d1">
 
-This graph is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
+**Fig.5** This graph is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
 
 
 
@@ -224,17 +224,21 @@ We designed this code to specify the timespan that we need for humidity. We chos
 
 With the assistance of these functions that we defined, we can now compare all data and provide the client with a clear graphical representation of the humidity and temperature indoor and outdoor. 
 
-<img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">
-This is the comparison between indoor and outdoor humidity
+<img width="601" alt="Screenshot 2023-12-14 at 11 23 44" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/187965a0-5441-489b-8527-f89dd17c7158">**Fig.6** This is the comparison between indoor and outdoor humidity
 
 
 
-Similarly, we compared the average outdoor temperature with the indoor temperature. 
+**Fig.7** Similarly, we compared the average outdoor temperature with the indoor temperature. 
 <img width="585" alt="Screenshot 2023-12-14 at 11 30 31" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/64a4c26f-ff10-4f62-9d64-53834e10147b">
 
 
 
 ## 2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
+<img width="631" alt="Screenshot 2023-12-14 at 11 44 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/c9e3ccd8-291c-4c16-b39f-522e65c48a0b">
+**Fig.8** Shows the indoor linear model for Temperature
+<img width="631" alt="Screenshot 2023-12-14 at 11 45 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/9cd1d84f-6f58-4819-b31c-cba2985e53fa">
+**Fig.9** Shows the indoor linear model for Humidity
+
 ## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
