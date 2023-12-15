@@ -136,13 +136,18 @@ with open(csv_file_path, mode='a', newline='') as file:
 2. For loop
 3. While loop
 4. if statement
-5. Generating grpahs with matplotlib
-6. API Requests
-7. Timing
-8. writing rows in a csv file
-9. read data from a csv file
-10. calculate the mean, median, and standard deviation of a set of data
-11. smoothing a graph using smoothing function
+5. elif statement
+6. else statement
+7. Defining and using valuables
+8. Generating grpahs with matplotlib
+9. API Requests
+10. Timing
+11. writing rows in a csv file
+12. read data from a csv file
+13. Fetching data from online api server
+14. calculate the mean, median, and standard deviation of a set of data
+15. smoothing a graph using smoothing function
+16. print
 
 ## Existing tools used
 
@@ -224,7 +229,8 @@ def smoothing(values: [], size_window: int = 5):
 
 <img width="570" alt="Screenshot 2023-12-14 at 4 01 30" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/ba3a21e5-ed4f-49fa-8791-cec8a6b161d1">
 
-This graph is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
+
+**Fig.5** is an example of how we calculate the average value from multiple sensors using the functions above. It's also worth noting that the curves are smoothed using the smoothing function. 
 
 
 
@@ -258,7 +264,7 @@ With the assistance of these functions that we defined, we can now compare all d
 
 
 
-This is the comparison between indoor and outdoor humidity
+**Fig.6** is the comparison between indoor and outdoor humidity
 
 
 
@@ -269,6 +275,8 @@ Similarly, we compared the average outdoor temperature with the indoor temperatu
 
 <img width="585" alt="Screenshot 2023-12-14 at 11 30 31" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/64a4c26f-ff10-4f62-9d64-53834e10147b">
 
+
+**Fig.7** Indoor and outdoor temperature
 
 
 Note that all data have been recorded in the same time period, 2023-11-30 20:00 to 2023-12-2 20:00. 48 hours in total. 
@@ -321,24 +329,32 @@ plt.show()
 
 <img width="617" alt="Screenshot 2023-12-14 at 13 16 23" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/dce5fd96-f570-4f5b-a99a-cee9d7c4c6bc">
 
-This is the graph generated using the code above. The linear equation for the indoor temperature is y=23.89
+**Fig.8** is the graph generated using the code above. The linear equation for the indoor temperature is y=23.89
 
 
 
 Similarly, we used the same method to generate graphs for indoor humidity, outdoor temperature, and outdoor humidity. 
 
+
 <img width="617" alt="Screenshot 2023-12-14 at 13 29 42" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/fb9f9672-c8ea-4de5-ba52-7cf33bd9b40b">
 
+**Fig.9** 
 
 
 <img width="603" alt="Screenshot 2023-12-15 at 2 05 43" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/396d58a1-04cd-45b1-a94f-1c61f5996288">
 
-The linear model for outdoor temperature is T(t) = 0.0021798t + 12.1434129
+**Fig.10** is the linear model for outdoor temperature is T(t) = 0.0021798t + 12.1434129
+
+
+
 
 
 <img width="599" alt="Screenshot 2023-12-15 at 2 01 43" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/10d92825-5483-4791-8f5c-4eb17384dd8f">
 
-The linear model for outdoor humidity is T(t) = -0.0083250682t + 51.362422
+
+**Fig.11** is the linear model for outdoor humidity is T(t) = -0.0083250682t + 51.362422
+
+
 
 ## 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum.
 
@@ -355,11 +371,24 @@ plt.axhline(y=np.mean(b), color="blue")
 
 <img width="596" alt="Screenshot 2023-12-14 at 15 19 23" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/43f0dd38-f516-4bfe-9db1-3fc620f88635">
 
+**Fig.12** 
+
+
 <img width="599" alt="Screenshot 2023-12-14 at 14 58 24" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/12541e5a-9a45-483b-994e-a2f5d604eedd">
+
+**Fig.13** 
+
+
 
 <img width="598" alt="Screenshot 2023-12-14 at 15 05 36" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/44c6e59e-44d5-41fd-beea-3a6feaa06095">
 
+**Fig.14**
+
+
+
 <img width="590" alt="Screenshot 2023-12-14 at 15 07 00" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/4a7c45af-6012-4ae3-a27a-36ed1909828a">
+
+**Fig.15** 
 
 
 The graph has three lines, indicating max, min and mean. 
@@ -379,10 +408,13 @@ This program is an example of how we generated errobars with standard deviation.
 
 <img width="598" alt="Screenshot 2023-12-14 at 15 35 35" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/313b1ee9-4fa3-44ed-aae7-38857b7def14">
 
+**Fig.16** 
+
 <img width="586" alt="Screenshot 2023-12-14 at 15 41 41" src="https://github.com/NaomiRozenberg/unit2_repo/assets/144768397/8090bda7-0f77-4dcd-bb75-8c10c252fa11">
 
+**Fig.17** 
 
-This is the examples of standard deviation errorbar with the outdoor temperature and humidity curve. However, since we only have one sensor for indoor humidity and temperature, it's not possible to calculate standard deviation for it. 
+These are the examples of standard deviation errorbar with the outdoor temperature and humidity curve. However, since we only have one sensor for indoor humidity and temperature, it's not possible to calculate standard deviation for it. 
 
 
 ## 4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
@@ -412,6 +444,7 @@ This image proves the collation of data to the csv file was successful
 
 <img width="1470" alt="Screenshot 2023-12-13 at 20 06 15" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/ec1a8122-1525-4111-9e9c-d6bbe10aa071">
 
+**Fig.18** 
 
 
 ## 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
@@ -422,15 +455,20 @@ Below are two graphs for the pridiction of temperature and humidity.
 
 <img width="631" alt="Screenshot 2023-12-14 at 11 41 04" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/3324524f-897f-40ca-a8f7-94ea742813f6">
 
+**Fig.19** 
+
+
 
 <img width="631" alt="Screenshot 2023-12-14 at 11 34 18" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/08a31e5e-2b2a-47ee-ad4d-b2589049a3b2">
 
+**Fig.20** 
 
 ## 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
 
 <img width="884" alt="Screenshot 2023-12-14 at 16 06 54" src="https://github.com/NaomiRozenberg/unit2_repo/assets/142605919/489cee1e-0316-4e8c-9610-6b69a9d50757">
 
+**Fig.21** 
 
 
 
